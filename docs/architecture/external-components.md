@@ -57,7 +57,6 @@ The sandbox restricts package installation through policies defined in `packages
 ### Known Limitations
 
 - Browser coverage follows upstream headless Chrome/Chromium availability; legacy Edge is not supported.
- fork.
 
 - File system operations lack atomic rename semantics on network-backed volumes; use local tmpfs for transactional snapshots.
 - Concurrency limit is bounded by available Node worker threads; large fleets require horizontal scaling of sandbox workers.
