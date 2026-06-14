@@ -1,0 +1,15 @@
+{
+  "name": "bkg-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "check": "turbo run check"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  }
+}
