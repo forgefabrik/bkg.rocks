@@ -28,3 +28,6 @@ npm-debug.log*
 # Coverage
 coverage
 .nyc_output
+
+# TypeScript build info
+*.tsbuildinfo
