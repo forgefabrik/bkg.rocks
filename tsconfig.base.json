@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@bkg/ui": ["packages/ui/src"],
+      "@bkg/database": ["packages/database/src"],
+      "@bkg/contracts": ["packages/contracts/src"],
+      "@bkg/validation": ["packages/validation/src"],
+      "@bkg/auth": ["packages/auth/src"],
+      "@bkg/ai": ["packages/ai/src"],
+      "@bkg/agents": ["packages/agents/src"],
+      "@bkg/live-events": ["packages/live-events/src"],
+      "@bkg/voice": ["packages/voice/src"],
+      "@bkg/game-docs": ["packages/game-docs/src"],
+      "@bkg/game-engine": ["packages/game-engine/src"],
+      "@bkg/pixel-engine": ["packages/pixel-engine/src"],
+      "@bkg/animation-engine": ["packages/animation-engine/src"],
+      "@bkg/level-engine": ["packages/level-engine/src"],
+      "@bkg/audio-engine": ["packages/audio-engine/src"],
+      "@bkg/observability": ["packages/observability/src"],
+      "@bkg/config": ["packages/config/src"],
+      "@bkg/testing": ["packages/testing/src"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
