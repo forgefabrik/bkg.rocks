@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bkg/ui": ["packages/ui/src/index.ts"],
+      "@bkg/db": ["packages/db/src/index.ts"],
+      "@bkg/contracts": ["packages/contracts/src/index.ts"],
+      "@bkg/validation": ["packages/validation/src/index.ts"],
+      "@bkg/auth": ["packages/auth/src/index.ts"],
+      "@bkg/config": ["packages/config/src/index.ts"]
+    },
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

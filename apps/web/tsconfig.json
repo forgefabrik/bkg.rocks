@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@bkg/ui": ["../../packages/ui/src/index.ts"],
+      "@bkg/db": ["../../packages/db/src/index.ts"],
+      "@bkg/contracts": ["../../packages/contracts/src/index.ts"],
+      "@bkg/validation": ["../../packages/validation/src/index.ts"],
+      "@bkg/auth": ["../../packages/auth/src/index.ts"],
+      "@bkg/config": ["../../packages/config/src/index.ts"]
+    },
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
