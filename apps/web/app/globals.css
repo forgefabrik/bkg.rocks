@@ -1,17 +1,33 @@
-:root {
-  color-scheme: light;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bkg-navy: #0b1021;
+    --bkg-cobalt: #1a3a6b;
+    --bkg-teal: #22d3bb;
+    --bkg-amber: #f59e0b;
+    --bkg-slate: #cbd5e1;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer components {
+  .pixel-border {
+    @apply border-2 border-bkg-navy shadow-[0_0_0_2px_rgba(34,211,187,0.15)];
+  }
 
-html,
-body {
-  margin: 0;
-  min-height: 100%;
-}
+  .pixel-btn {
+    @apply inline-flex items-center justify-center px-4 py-2 font-mono text-sm uppercase tracking-wide transition-colors border-2 border-bkg-teal text-bkg-navy bg-bkg-teal hover:bg-white;
+    box-shadow:
+      inset -4px -4px 0 rgba(0,0,0,0.25),
+      4px 4px 0 rgba(0,0,0,0.35);
+  }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+  .pixel-card {
+    @apply bg-bkg-navy/60 backdrop-blur border border-bkg-cobalt;
+    box-shadow:
+      inset 0 0 0 2px rgba(34,211,187,0.12),
+      8px 8px 0 rgba(0,0,0,0.4);
+  }
 }
