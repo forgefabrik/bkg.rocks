@@ -1,10 +1,11 @@
 import { Worker } from "bullmq";
 import IORedis from "ioredis";
 
-const connection = new IORedis({
-  host: process.env.REDIS_HOST || "localhost",
-  port: parseInt(process.env.REDIS_PORT || "6379"),
-});
+if (process.env.NODE_ENV !== "production") {
+  import("dotenv").then(({ default: dotenv }) => dotenv.config());
+}
+
+const connection = new IORedis(process.env.REDIS_URL ?? "redis://localhost:6379");
 
 const worker = new Worker(
   "bkg-jobs",

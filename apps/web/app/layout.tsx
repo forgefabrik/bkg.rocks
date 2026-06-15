@@ -1,3 +1,4 @@
+import "@bkg/ui/styles";
 import "./globals.css";
 
 export const metadata = {
