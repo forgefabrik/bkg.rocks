@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@bkg/db": ["./packages/db/src/index.ts"],
+      "@bkg/ui": ["./packages/ui/src/index.ts"],
+      "@bkg/contracts": ["./packages/contracts/src/index.ts"],
+      "@bkg/validation": ["./packages/validation/src/index.ts"],
+      "@bkg/auth": ["./packages/auth/src/index.ts"],
+      "@bkg/config": ["./packages/config/src/index.ts"]
+    }
+  },
+  "include": ["apps/**/*", "packages/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
