@@ -1,0 +1,23 @@
+{
+  "name": "@bkg/jobs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "bullmq": "^5.0.0",
+    "ioredis": "^5.4.0",
+    "@bkg/database": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsx": "^4.7.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^8.57.0"
+  }
+}
