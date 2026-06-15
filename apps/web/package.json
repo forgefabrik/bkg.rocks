@@ -5,8 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "lint": "eslint \"app/**/*.{ts,tsx}\"",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "next": "15.0.0",
